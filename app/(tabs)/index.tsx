@@ -149,6 +149,7 @@ const Home: React.FC = () => {
   const fetchData = async () => {
     try {
       const response = await axios.get("http://localhost:3000/sheet"); // Replace with your backend URL
+      // const response = await axios.get("https://1-fi-project.vercel.app/");
       const [headers, values] = response.data;
       setData({
         currentValue: values[0],
